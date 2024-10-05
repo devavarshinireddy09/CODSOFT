@@ -1,0 +1,39 @@
+TASK 2:-TIC-TAC-TOE AI
+Implement an AI agent that plays the classic game of Tic-Tac-Toe
+against a human player. You can use algorithms like Minimax with
+or without Alpha-Beta Pruning to make the AI player unbeatable.
+This project will help you understand game theory and basic search
+algorithms.
+Game Structure
+
+The game is structured into several functions, each responsible for a specific aspect of the game:
+
+print_board(board): Prints the current state of the game board.
+is_winner(board, player): Checks if a player has won the game.
+is_board_full(board): Checks if the game board is full.
+get_empty_cells(board): Returns a list of empty cells on the game board.
+minimax(board, depth, maximizing_player): Implements the Minimax algorithm to determine the best move for the AI.
+find_best_move(board): Uses the Minimax algorithm to find the best move for the AI.
+play_tic_tac_toe(): The main function that controls the game flow.
+Minimax Algorithm
+
+The Minimax algorithm is a recursive algorithm used to determine the best move for the AI. It works by simulating all possible moves and their outcomes, and then choosing the move that maximizes the chances of winning.
+
+Game Flow
+
+The game flow is controlled by the play_tic_tac_toe() function, which:
+
+Initializes the game board and the current player (human).
+Prints the game board.
+Asks the human player to enter their move (row and column).
+Checks if the move is valid (i.e., if the cell is empty).
+Updates the game board with the human player's move.
+Checks if the human player has won the game.
+Checks if the game board is full.
+Uses the Minimax algorithm to determine the best move for the AI.
+Updates the game board with the AI's move.
+Prints the game board.
+Repeats steps 3-10 until the game is over.
+Example Use Case
+
+To run the game, simply execute the play_tic_tac_toe() function. The game will prompt the human player to enter their moves, and the AI will respond with its moves. The game will continue until the human player wins, the AI wins, or the game board is full.
